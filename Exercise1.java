@@ -1,29 +1,27 @@
-package Array_re_prepration;
-
-import java.util.Arrays; 
+package re_conditional_statement_prac;
+//Write a Java program to get a number from the user and print whether it is positive or negative.
+import java.util.Scanner;
 public class Exercise1 {
-public static void main(String[] args){   
+
     
-    int[] my_array1 = {
-            1789, 2035, 1899, 1456, 2013, 
-            1458, 2458, 1254, 1472, 2365, 
-            1456, 2165, 1457, 2456};
-            
-    String[] my_array2 = {
-            "Java",
-			
-            "Python",
-            "PHP",
-            "C#",
-            "C Programming",
-            "C++"
-        };        
-    System.out.println("Original numeric array : "+Arrays.toString(my_array1));
-    Arrays.sort(my_array1);
-    System.out.println("Sorted numeric array : "+Arrays.toString(my_array1));
-    
-    System.out.println("Original string array : "+Arrays.toString(my_array2));
-    Arrays.sort(my_array2);
-    System.out.println("Sorted string array : "+Arrays.toString(my_array2));
+  public static void main(String[] args)
+    {
+        Scanner in = new Scanner(System.in);
+        System.out.print("Input number: ");
+        int input = in.nextInt();
+
+        if (input > 0)
+        {
+            System.out.println("Number is positive");
+        }
+        else if (input < 0)
+        {
+            System.out.println("Number is negative");
+        }
+        else
+        {
+            System.out.println("Number is zero");
+        }
     }
 }
+
